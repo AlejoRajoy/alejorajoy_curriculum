@@ -44,6 +44,7 @@ body {
     background-color: #0D0D0D;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 html {
@@ -73,18 +74,15 @@ h2 {
 }
 
 .titulos-seccion {
-    font-family: 'Roboto Bold', sans-serif;
+       font-family: 'Roboto Bold', sans-serif;
     font-size: 70px;
     text-align: center;
     line-height: 1.2;
-    text-shadow: -1px -1px 0 #0D0D0D, 1px -1px 0 #0D0D0D, -1px 1px 0 #0D0D0D, 1px 1px 0 #0D0D0D;
     margin: 20px 0;
     background-color: #F2561D;
     color: #0D0D0D;
-    text-align: center;
     padding: 15px 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     margin-bottom: 3%;
 }
 
@@ -134,8 +132,14 @@ footer ul {
 }
 
 #frase {
+    font-size: 5vh;
+    text-align: center;
+    background: linear-gradient(45deg, #0D0D0D, #F2561D);
+    font-style: italic;
     width: 100%;
-    display: block;
+    position: relative;
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 header {
@@ -195,12 +199,18 @@ nav a:hover {
 
 
 #mi-historia {
-    max-width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
+    
 }
+
 
 #mi-historia .texto {
     text-align: left;
@@ -252,14 +262,6 @@ nav a:hover {
     align-items: center;
 }
 
-#frase {
-    font-size: 5vh;
-    text-align: center;
-    background: linear-gradient(45deg, #0D0D0D, #F2561D);
-    font-style: italic;
-    padding: 70px;
-}
-
 .catedra,
 .redes {
     text-align: center;
@@ -276,7 +278,11 @@ nav a:hover {
     display: flex;
     align-items: center; 
     gap: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
 
 #texto {
     max-width: 600px; 
@@ -299,3 +305,4 @@ h2 {
 .item-galeria p {
     font-family: 'Roboto Medium', sans-serif;
 }
+
